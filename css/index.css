@@ -1,0 +1,62 @@
+
+.container{
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: auto;
+    background-color: rgba(16, 50, 143, 0.692);
+    color: white;
+    border-radius: 15px;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 12px 30px 32px 7px black;
+    max-height: 800px;
+    flex-shrink: 1;
+    justify-content: center;
+
+}
+.inputgroup{
+    flex-shrink: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.inputgroup input{
+    width: 40%;
+    height: 25px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+
+}
+.inputgroup select{
+    width: 42%;
+    height: 29px;
+    border-radius: 7px;
+}
+.inputgroup select:hover{
+    cursor: pointer;
+}
+.inputgroup option{
+    cursor:pointer;
+}
+#btn{
+    width: 80%;
+    border-radius: 7px;
+    height: 40px;
+    cursor: pointer;
+    color:white;
+    background-color: lightgray;
+    transition: 1s all;
+    margin-bottom: 10px;
+    margin: auto;
+}
+#btn:hover{
+    transform: scale(1.2);
+    color: green;
+
+}

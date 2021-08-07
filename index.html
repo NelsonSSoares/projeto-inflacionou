@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inflacionou</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+</head>
+<body>
+    
+    <main>
+        <section class="container">
+            <div>
+                <h3>Verifique a Inflação ou Deflação ↓ ↑ </h3>
+            </div>
+            <div class="inputgroup">      
+                <label for="produto">Informe o Produto:</label>
+                <select name="produto" id="produto" autofocus required>
+                    <option value="">Escolha:</option>
+                    <option value="1">Tomate</option>
+                    <option value="2">Laranja</option>
+                    <option value="3">Abacaxi</option>
+                    <option value="4">Limão</option>
+                </select>
+            </div>
+            <div class="inputgroup">
+                <label for="valorant">Valor semana anterior:</label>
+                <input type="number" name="valorant" id="anterior" required maxlength="4">
+            </div>
+            
+           <div class="inputgroup">
+                <label for="atual">Valor Atual:</label>
+                <input type="number" name="atual" id="atual" required maxlength="4" >
+           </div>
+            <button type="submit" onclick="verificar()" id="btn"><strong>Verificar</strong></button>
+            <br>
+            <h2 id="result"></h2>
+        </section>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
